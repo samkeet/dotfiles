@@ -1,6 +1,5 @@
 export GOPATH=${HOME}/go
 export PATH=$PATH:$GOPATH/bin
-export KUBECONFIG="/Users/sshah23/.kube/config_kube.sbg-qbo-ppd.a.intuit.com"
 
 RED='\[\e[1;31m\]'
 BOLDYELLOW='\[\e[1;33m\]'
@@ -60,10 +59,7 @@ extract () {
    fi
 }
 
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH
+export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # Bash autocompletions
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
